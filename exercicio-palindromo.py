@@ -1,13 +1,8 @@
 # Crie uma lista com vários elementos, gere uma lista inversa e verifique se a ordem dos elementos é igual
 
-from random import randint
-lista = []
-for i in range(1, 5):
-    lista.append(randint(1, 100))
-print(lista)
-lista_invertida = lista[::-1]
-print(lista_invertida)
-if lista == lista_invertida:
+lista = [1, 0, 0, 0, 1]
+
+if lista == lista[::-1]:
     print("A sua lista é um palíndromo")
 else:
     print("A sua lista não é um palíndromo")
